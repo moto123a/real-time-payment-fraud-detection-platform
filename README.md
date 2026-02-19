@@ -45,3 +45,28 @@ airflow-orchestration/      # Airflow DAG for ETL + certified dataset publishing
 lakehouse/                  # SQL schema + lakehouse table definitions
 monitoring/                 # Monitoring + operational runbook
 docs/                       # Architecture + design notes
+
+✅ Key Features
+
+Real-time transaction enrichment (geo/device/merchant/user signals)
+
+Streaming risk scoring and fraud flagging
+
+Certified datasets (bronze/silver/gold pattern)
+
+Dimensional modeling for downstream reporting
+
+Data validation checkpoints and operational monitoring notes
+
+🧪 Example Use Cases
+
+Detect impossible travel (NY → LA in 30 minutes)
+
+Detect velocity attacks (many small transactions quickly)
+
+Detect suspicious merchant patterns (rare MCC with high chargebacks)
+
+📌 Author
+
+Pavan Krishna
+Software Engineer | Data & Streaming Systems
