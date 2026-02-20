@@ -1,0 +1,25 @@
+{
+  "dataset_name": "customer_fraud_risk_profile_v1",
+  "description": "Certified dataset representing customer-level fraud risk features for analytics and reporting",
+  "owner": "fraud-analytics-team",
+  "refresh_mode": "batch",
+  "refresh_frequency": "daily",
+  "fields": {
+    "customer_id": "string",
+    "daily_transaction_count": "integer",
+    "daily_total_amount": "double",
+    "high_risk_transaction_count": "integer",
+    "geo_location_mismatch_flag": "boolean",
+    "device_switch_frequency": "integer",
+    "avg_transaction_velocity": "double",
+    "fraud_score_avg": "double",
+    "risk_band": "string"
+  },
+  "data_quality_rules": {
+    "customer_id": "not null",
+    "daily_transaction_count": ">= 0",
+    "daily_total_amount": ">= 0",
+    "fraud_score_avg": "between 0 and 1"
+  },
+  "version": "1.0"
+}
